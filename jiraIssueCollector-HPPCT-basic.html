@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>HPPCT</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <style media="screen">
+    .task {
+      border: 2px;
+    }
+  </style>
+  <script type="text/javascript"
+    src="https://jira.meredith.com/s/8f818d07bc1dae9039b2f814b9559a4a-T/-wy4t9t/713001/2a79480933204c2855dfdbe977bc9ca5/2.0.31/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?locale=en-US&collectorId=2c4fe1e7">
+  </script>
+  <script type="text/javascript"
+    src="https://jira.meredith.com/s/8f818d07bc1dae9039b2f814b9559a4a-T/-wy4t9t/713001/2a79480933204c2855dfdbe977bc9ca5/2.0.31/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?locale=en-US&collectorId=719f3e68">
+  </script>
+
+  <script type="text/javascript">
+    window.ATL_JQ_PAGE_PROPS = {
+      '2c4fe1e7': {
+        "triggerFunction": function(showCollectorDialog) {
+          jQuery("#task-button").click(function(e) {
+            e.preventDefault();
+            showCollectorDialog();
+          });
+        }
+      },
+      '719f3e68': {
+        "triggerFunction": function(showCollectorDialog) {
+          jQuery("#incident-button").click(function(e) {
+            e.preventDefault();
+            showCollectorDialog();
+          });
+        }
+      }
+    };
+  </script>
+
+</head>
+
+<body>
+  <h1>HR Process and Policy Changes</h1>
+  <table>
+    <tr>
+      <td style="padding:3%">
+        <div class="task" style="padding:'3px'">
+          <p class="card-text">Click below to submit a request for a new policy/process</p>
+          <a href="#" class="btn btn-primary" id="task-button">New Policy/Process</a>
+        </div>
+      </td>
+      <td style="padding:3%">
+        <div class="incident">
+          <p class="card-text">Click below to submit a request to change an existing policy/process</p>
+          <a href="#" class="btn btn-primary" id="incident-button">Existing Policy/Process</a>
+        </div>
+      </td>
+    </tr>
+  </table>
+
+
+</body>
+
+</html>
